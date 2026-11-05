@@ -7,14 +7,37 @@
   <meta name="description" content="Rahul Singh provides digital platform solutions, business support, client services, and technology consulting in Manchester, United Kingdom.">
   <meta name="author" content="Rahul Singh">
   <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Rahul Singh | Digital Platform Solutions">
+  <meta property="og:description" content="Digital platform solutions, business support, client services, and technology consulting in Manchester, United Kingdom.">
   <title>Rahul Singh | Digital Platform Solutions</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='50' fill='%23c9a96e'/%3E%3Ctext x='50' y='62' font-family='Georgia,serif' font-size='38' font-weight='700' text-anchor='middle' fill='%230b0c10'%3ERS%3C/text%3E%3C/svg%3E">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Rahul Singh",
+    "jobTitle": "Digital Platform Solutions Consultant",
+    "email": "mailto:iamrahul06522@gmail.com",
+    "telephone": "+447516113461",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Manchester",
+      "addressCountry": "GB"
+    },
+    "knowsAbout": [
+      "Digital platform solutions",
+      "Business support",
+      "Client services",
+      "Technology consulting"
+    ]
+  }
+  </script>
   <style>
     :root {
       color-scheme: dark;
       --bg: #0b0c10;
       --surface: #121419;
-      --surface-raised: #17191f;
       --text: #f5f1e8;
       --muted: #b7b2a7;
       --gold: #d7bd85;
@@ -26,30 +49,19 @@
       scroll-behavior: smooth;
     }
 
-    *,
-    *::before,
-    *::after {
-      box-sizing: border-box;
-    }
+    *, *::before, *::after { box-sizing: border-box; }
 
     body {
       min-width: 320px;
       min-height: 100vh;
       margin: 0;
       color: var(--text);
-      background:
-        radial-gradient(ellipse at 50% 0, rgba(215, 189, 133, 0.11), transparent 34rem),
-        linear-gradient(180deg, #0b0c10 0%, #0e1014 52%, #0b0c10 100%);
+      background: radial-gradient(ellipse at 50% 0, rgba(215, 189, 133, 0.11), transparent 34rem), linear-gradient(180deg, #0b0c10 0%, #0e1014 52%, #0b0c10 100%);
       line-height: 1.7;
     }
 
-    a {
-      color: inherit;
-    }
-
-    a:focus-visible,
-    input:focus-visible,
-    textarea:focus-visible {
+    a { color: inherit; }
+    a:focus-visible, input:focus-visible, textarea:focus-visible, button:focus-visible {
       outline: 2px solid var(--gold-bright);
       outline-offset: 4px;
     }
@@ -66,46 +78,42 @@
       background: var(--gold-bright);
       font-weight: 700;
     }
+    .skip-link:focus { transform: translateY(0); }
 
-    .skip-link:focus {
-      transform: translateY(0);
-    }
-
-    .container {
-      width: min(1120px, calc(100% - 2.5rem));
-      margin-inline: auto;
-    }
-
-    .site-header {
-      padding-top: 1.25rem;
-    }
-
+    .container { width: min(1120px, calc(100% - 2.5rem)); margin-inline: auto; }
+    .site-header { padding-top: 1.25rem; }
     .topline {
       display: flex;
       align-items: center;
       justify-content: space-between;
+      gap: 1rem;
       padding: 0.7rem 0 1rem;
       border-bottom: 1px solid var(--border);
     }
-
     .wordmark {
       color: var(--text);
       font-family: var(--serif);
       font-size: 1.12rem;
       letter-spacing: 0.04em;
       text-decoration: none;
+      white-space: nowrap;
     }
-
-    .wordmark span {
-      color: var(--gold);
-    }
-
+    .wordmark span { color: var(--gold); }
     .location {
       color: var(--muted);
-      font-size: 0.78rem;
+      font-size: 0.72rem;
       letter-spacing: 0.1em;
       text-transform: uppercase;
+      white-space: nowrap;
     }
+    .site-nav { display: flex; flex-wrap: wrap; gap: 1.2rem; }
+    .site-nav a {
+      color: var(--muted);
+      font-size: 0.82rem;
+      text-decoration: none;
+      transition: color 160ms ease;
+    }
+    .site-nav a:hover { color: var(--gold-bright); }
 
     .hero {
       position: relative;
@@ -115,12 +123,9 @@
       text-align: center;
       border: 1px solid var(--border);
       border-radius: 4px;
-      background:
-        linear-gradient(135deg, rgba(215, 189, 133, 0.055), transparent 52%),
-        var(--surface);
+      background: linear-gradient(135deg, rgba(215, 189, 133, 0.055), transparent 52%), var(--surface);
       box-shadow: 0 28px 90px rgba(0, 0, 0, 0.25);
     }
-
     .hero::after {
       position: absolute;
       top: 0;
@@ -131,7 +136,6 @@
       background: linear-gradient(90deg, transparent, var(--gold), transparent);
       content: "";
     }
-
     .monogram {
       display: grid;
       width: 76px;
@@ -145,7 +149,6 @@
       font-size: 1.45rem;
       letter-spacing: 0.08em;
     }
-
     .eyebrow {
       margin: 0;
       color: var(--gold);
@@ -154,14 +157,7 @@
       letter-spacing: 0.22em;
       text-transform: uppercase;
     }
-
-    h1,
-    h2,
-    h3,
-    p {
-      margin-top: 0;
-    }
-
+    h1, h2, h3, p { margin-top: 0; }
     .hero h1 {
       margin: 0.8rem 0 0.65rem;
       font-family: var(--serif);
@@ -170,23 +166,19 @@
       letter-spacing: -0.045em;
       line-height: 1.04;
     }
-
     .hero-copy {
       max-width: 640px;
       margin: 0 auto;
       color: var(--muted);
       font-size: clamp(1rem, 2.2vw, 1.15rem);
     }
-
-    .hero-actions,
-    .contact-actions {
+    .hero-actions, .contact-actions {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 0.8rem;
       margin-top: 1.9rem;
     }
-
     .button {
       display: inline-flex;
       min-height: 48px;
@@ -202,35 +194,13 @@
       transition: color 180ms ease, background-color 180ms ease, transform 180ms ease;
       cursor: pointer;
     }
+    .button:hover { transform: translateY(-2px); }
+    .button-primary { color: #14120e; background: var(--gold); }
+    .button-primary:hover { border-color: var(--gold-bright); background: var(--gold-bright); }
+    .button-secondary { color: var(--gold-bright); background: transparent; }
+    .button-secondary:hover { color: var(--bg); background: var(--gold); }
 
-    .button:hover {
-      transform: translateY(-2px);
-    }
-
-    .button-primary {
-      color: #14120e;
-      background: var(--gold);
-    }
-
-    .button-primary:hover {
-      border-color: var(--gold-bright);
-      background: var(--gold-bright);
-    }
-
-    .button-secondary {
-      color: var(--gold-bright);
-      background: transparent;
-    }
-
-    .button-secondary:hover {
-      color: var(--bg);
-      background: var(--gold);
-    }
-
-    main {
-      padding-bottom: 2.5rem;
-    }
-
+    main { padding-bottom: 2.5rem; }
     .contact-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
@@ -239,16 +209,8 @@
       border: 1px solid var(--border);
       background: var(--surface);
     }
-
-    .contact-card {
-      min-height: 120px;
-      padding: 1.35rem 1.5rem;
-    }
-
-    .contact-card + .contact-card {
-      border-left: 1px solid var(--border);
-    }
-
+    .contact-card { min-height: 120px; padding: 1.35rem 1.5rem; }
+    .contact-card + .contact-card { border-left: 1px solid var(--border); }
     .contact-card h2 {
       margin-bottom: 0.35rem;
       color: var(--gold);
@@ -257,31 +219,16 @@
       letter-spacing: 0.13em;
       text-transform: uppercase;
     }
-
-    .contact-card p {
-      margin-bottom: 0;
-      color: var(--muted);
-      font-size: 0.94rem;
-      overflow-wrap: anywhere;
-    }
-
-    .contact-card a {
-      text-decoration-color: rgba(215, 189, 133, 0.45);
-      text-underline-offset: 4px;
-    }
-
+    .contact-card p { margin-bottom: 0; color: var(--muted); font-size: 0.94rem; overflow-wrap: anywhere; }
+    .contact-card a { text-decoration-color: rgba(215, 189, 133, 0.45); text-underline-offset: 4px; }
     .panel {
       margin-top: 1.25rem;
       padding: clamp(2rem, 6vw, 4rem);
       border: 1px solid var(--border);
       background: var(--surface);
+      scroll-margin-top: 1.25rem;
     }
-
-    .section-heading {
-      margin-bottom: 1.35rem;
-      text-align: center;
-    }
-
+    .section-heading { margin-bottom: 1.35rem; text-align: center; }
     .section-heading h2 {
       margin: 0.5rem 0 0.45rem;
       font-family: var(--serif);
@@ -290,21 +237,22 @@
       letter-spacing: -0.025em;
       line-height: 1.2;
     }
+    .section-heading > p:last-child, .about-copy { color: var(--muted); }
+    .section-heading > p:last-child { margin-bottom: 0; }
+    .about-copy { max-width: 760px; margin: 0 auto; text-align: center; }
 
-    .section-heading > p:last-child,
-    .about-copy {
-      color: var(--muted);
+    .reasons-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+      gap: 1rem;
     }
-
-    .section-heading > p:last-child {
-      margin-bottom: 0;
+    .reason-card {
+      padding: 1.4rem;
+      border: 1px solid var(--border);
+      background: rgba(255, 255, 255, 0.02);
     }
-
-    .about-copy {
-      max-width: 760px;
-      margin: 0 auto;
-      text-align: center;
-    }
+    .reason-card h3 { margin-bottom: 0.45rem; color: var(--gold-bright); font-family: var(--serif); font-size: 1.25rem; font-weight: 400; }
+    .reason-card p { margin: 0; color: var(--muted); font-size: 0.91rem; }
 
     .stats-grid {
       display: grid;
@@ -314,13 +262,7 @@
       border: 1px solid var(--border);
       background: var(--border);
     }
-
-    .stat-card {
-      padding: 1.55rem 1rem;
-      background: var(--surface);
-      text-align: center;
-    }
-
+    .stat-card { padding: 1.55rem 1rem; background: var(--surface); text-align: center; }
     .stat-value {
       display: block;
       margin-bottom: 0.2rem;
@@ -329,13 +271,7 @@
       font-size: clamp(1.8rem, 5vw, 2.5rem);
       line-height: 1.2;
     }
-
-    .stat-label {
-      color: var(--muted);
-      font-size: 0.82rem;
-      letter-spacing: 0.035em;
-    }
-
+    .stat-label { color: var(--muted); font-size: 0.82rem; letter-spacing: 0.035em; }
     .service-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
@@ -345,7 +281,6 @@
       border-top: 1px solid var(--border);
       list-style: none;
     }
-
     .service-item {
       display: flex;
       min-height: 58px;
@@ -356,48 +291,15 @@
       color: var(--muted);
       font-size: 0.93rem;
     }
+    .service-item::before { color: var(--gold); content: "✦"; font-size: 0.75rem; }
 
-    .service-item::before {
-      color: var(--gold);
-      content: "✦";
-      font-size: 0.75rem;
-    }
-
-    .contact-cta {
-      text-align: center;
-    }
-
-    .message-form {
-      max-width: 680px;
-      margin: 1.8rem auto 0;
-      text-align: left;
-    }
-
-    .form-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 1rem;
-    }
-
-    .form-field {
-      display: grid;
-      gap: 0.45rem;
-      margin-bottom: 1rem;
-    }
-
-    .form-field-full {
-      grid-column: 1 / -1;
-    }
-
-    .form-field label {
-      color: var(--gold-bright);
-      font-size: 0.82rem;
-      font-weight: 700;
-      letter-spacing: 0.035em;
-    }
-
-    .form-field input,
-    .form-field textarea {
+    .contact-cta { text-align: center; }
+    .message-form { max-width: 680px; margin: 1.8rem auto 0; text-align: left; }
+    .form-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+    .form-field { display: grid; gap: 0.45rem; margin-bottom: 1rem; }
+    .form-field-full { grid-column: 1 / -1; }
+    .form-field label { color: var(--gold-bright); font-size: 0.82rem; font-weight: 700; letter-spacing: 0.035em; }
+    .form-field input, .form-field textarea {
       width: 100%;
       padding: 0.85rem 0.95rem;
       border: 1px solid var(--border);
@@ -406,29 +308,10 @@
       background: var(--bg);
       font: inherit;
     }
-
-    .form-field input::placeholder,
-    .form-field textarea::placeholder {
-      color: #827e75;
-    }
-
-    .form-field textarea {
-      min-height: 150px;
-      resize: vertical;
-    }
-
-    .form-submit {
-      width: 100%;
-      font: inherit;
-    }
-
-    .form-note {
-      margin: 0.85rem 0 0;
-      color: var(--muted);
-      text-align: center;
-      font-size: 0.82rem;
-    }
-
+    .form-field input::placeholder, .form-field textarea::placeholder { color: #a7a092; }
+    .form-field textarea { min-height: 150px; resize: vertical; }
+    .form-submit { width: 100%; font: inherit; }
+    .form-note { margin: 0.85rem 0 0; color: var(--muted); text-align: center; font-size: 0.82rem; }
     .site-footer {
       padding: 1.7rem 1rem 2.5rem;
       border-top: 1px solid var(--border);
@@ -437,11 +320,7 @@
       font-size: 0.82rem;
       letter-spacing: 0.025em;
     }
-
-    .site-footer p {
-      margin: 0.2rem 0;
-    }
-
+    .site-footer p { margin: 0.2rem 0; }
     .floating-whatsapp {
       position: fixed;
       right: max(1rem, env(safe-area-inset-right));
@@ -460,102 +339,57 @@
       text-decoration: none;
       transition: transform 180ms ease;
     }
+    .floating-whatsapp:hover { transform: translateY(-3px); }
 
-    .floating-whatsapp:hover {
-      transform: translateY(-3px);
+    @media (max-width: 760px) {
+      .container { width: min(100% - 1.25rem, 1120px); }
+      .site-header { padding-top: 0.5rem; }
+      .topline { flex-wrap: wrap; }
+      .site-nav { order: 3; width: 100%; justify-content: center; gap: 1rem; padding-top: 0.35rem; }
+      .location { font-size: 0.66rem; letter-spacing: 0.06em; }
+      .hero { margin-top: 0.75rem; padding-inline: 1rem; }
+      .contact-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .contact-card + .contact-card { border-left: 0; }
+      .contact-card:nth-child(even) { border-left: 1px solid var(--border); }
+      .contact-card:nth-child(n + 3) { border-top: 1px solid var(--border); }
     }
-
-    @media (max-width: 700px) {
-      .container {
-        width: min(100% - 1.25rem, 1120px);
-      }
-
-      .site-header {
-        padding-top: 0.5rem;
-      }
-
-      .location {
-        font-size: 0.66rem;
-        letter-spacing: 0.06em;
-      }
-
-      .hero {
-        margin-top: 0.75rem;
-        padding-inline: 1rem;
-      }
-
-      .contact-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-
-      .contact-card + .contact-card {
-        border-left: 0;
-      }
-
-      .contact-card:nth-child(even) {
-        border-left: 1px solid var(--border);
-      }
-
-      .contact-card:nth-child(n + 3) {
-        border-top: 1px solid var(--border);
-      }
-    }
-
     @media (max-width: 480px) {
-      .location {
-        max-width: 135px;
-        text-align: right;
-      }
-
-      .contact-grid,
-      .stats-grid,
-      .form-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .contact-card:nth-child(even) {
-        border-left: 0;
-      }
-
-      .contact-card + .contact-card {
-        border-top: 1px solid var(--border);
-      }
-
-      .hero-actions .button,
-      .contact-actions .button {
-        width: 100%;
-      }
+      .location { max-width: 135px; text-align: right; white-space: normal; }
+      .site-nav { gap: 0.8rem; }
+      .site-nav a { font-size: 0.76rem; }
+      .contact-grid, .stats-grid, .form-grid { grid-template-columns: 1fr; }
+      .contact-card:nth-child(even) { border-left: 0; }
+      .contact-card + .contact-card { border-top: 1px solid var(--border); }
+      .hero-actions .button, .contact-actions .button { width: 100%; }
     }
-
     @media (prefers-reduced-motion: reduce) {
-      :root {
-        scroll-behavior: auto;
-      }
-
-      *,
-      *::before,
-      *::after {
-        transition-duration: 0.01ms !important;
-      }
+      :root { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: 0.01ms !important; }
     }
   </style>
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to content</a>
 
-  <header class="site-header container">
+  <header class="site-header container" id="home">
     <div class="topline">
-      <a class="wordmark" href="#top" aria-label="Rahul Singh home">RAHUL <span>SINGH</span></a>
+      <a class="wordmark" href="#home" aria-label="Rahul Singh home">RAHUL <span>SINGH</span></a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#why-choose">Why choose me</a>
+        <a href="#contact">Contact</a>
+      </nav>
       <span class="location">Manchester, United Kingdom</span>
     </div>
-    <section class="hero" id="top" aria-labelledby="page-title">
+    <section class="hero" aria-labelledby="page-title">
       <div class="monogram" aria-hidden="true">RS</div>
       <p class="eyebrow">Digital Platform Solutions</p>
-      <h1 id="page-title">Rahul Singh</h1>
-      <p class="hero-copy">Business support, client services, and technology consulting—delivered with a practical, client-focused approach.</p>
+      <h1 id="page-title">Practical digital support for your business</h1>
+      <p class="hero-copy">Rahul Singh provides business support, client services, and technology consulting with a focus on clear communication and practical solutions.</p>
       <div class="hero-actions" aria-label="Get in touch">
-        <a class="button button-primary" href="https://wa.me/447460010944" target="_blank" rel="noopener noreferrer">Message on WhatsApp</a>
-        <a class="button button-secondary" href="mailto:iamrahul06522@gmail.com">Send an email</a>
+        <a class="button button-primary" href="#contact">Discuss your needs</a>
+        <a class="button button-secondary" href="https://wa.me/447460010944" target="_blank" rel="noopener noreferrer">Message on WhatsApp</a>
       </div>
     </section>
   </header>
@@ -580,7 +414,7 @@
       </article>
     </section>
 
-    <section class="panel" aria-labelledby="about-title">
+    <section class="panel" id="about" aria-labelledby="about-title">
       <div class="section-heading">
         <p class="eyebrow">About</p>
         <h2 id="about-title">Professional support for your business</h2>
@@ -588,22 +422,35 @@
       <p class="about-copy">Based in Manchester, United Kingdom, Rahul Singh provides digital platform solutions, client support services, and business consulting. The focus is on reliable service, responsive communication, and helping clients navigate their platform and business needs.</p>
     </section>
 
-    <section class="stats-grid" aria-label="Service commitments">
-      <article class="stat-card">
-        <span class="stat-value">24/7</span>
-        <span class="stat-label">Customer support</span>
-      </article>
-      <article class="stat-card">
-        <span class="stat-value">100%</span>
-        <span class="stat-label">Client focused</span>
-      </article>
-      <article class="stat-card">
-        <span class="stat-value">Global</span>
-        <span class="stat-label">Service reach</span>
-      </article>
+    <section class="panel" id="why-choose" aria-labelledby="why-title">
+      <div class="section-heading">
+        <p class="eyebrow">Working together</p>
+        <h2 id="why-title">A straightforward, client-focused approach</h2>
+        <p>Support shaped around your business needs and goals.</p>
+      </div>
+      <div class="reasons-grid">
+        <article class="reason-card">
+          <h3>Clear communication</h3>
+          <p>Discuss your requirements directly and get practical next steps for your enquiry.</p>
+        </article>
+        <article class="reason-card">
+          <h3>Business-minded support</h3>
+          <p>Explore platform and service options with your priorities and customers in mind.</p>
+        </article>
+        <article class="reason-card">
+          <h3>Flexible contact</h3>
+          <p>Reach out by email, phone, or WhatsApp using whichever channel suits you.</p>
+        </article>
+      </div>
     </section>
 
-    <section class="panel" aria-labelledby="services-title">
+    <section class="stats-grid" aria-label="Service commitments">
+      <article class="stat-card"><span class="stat-value">24/7</span><span class="stat-label">Customer support</span></article>
+      <article class="stat-card"><span class="stat-value">100%</span><span class="stat-label">Client focused</span></article>
+      <article class="stat-card"><span class="stat-value">Global</span><span class="stat-label">Service reach</span></article>
+    </section>
+
+    <section class="panel" id="services" aria-labelledby="services-title">
       <div class="section-heading">
         <p class="eyebrow">What I do</p>
         <h2 id="services-title">Professional services</h2>
@@ -622,25 +469,25 @@
       </ul>
     </section>
 
-    <section class="panel contact-cta" aria-labelledby="contact-title">
+    <section class="panel contact-cta" id="contact" aria-labelledby="contact-title">
       <div class="section-heading">
         <p class="eyebrow">Start a conversation</p>
-        <h2 id="contact-title">Send a message</h2>
-        <p>Fill out the form and your email app will open with the message ready to send.</p>
+        <h2 id="contact-title">Tell me what you need</h2>
+        <p>Complete the form to open an email draft addressed to Rahul.</p>
       </div>
       <form class="message-form" id="message-form">
         <div class="form-grid">
           <div class="form-field">
             <label for="name">Your name</label>
-            <input id="name" name="name" type="text" autocomplete="name" placeholder="Name" required>
+            <input id="name" name="name" type="text" autocomplete="name" maxlength="100" placeholder="Name" required>
           </div>
           <div class="form-field">
             <label for="email">Your email</label>
-            <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+            <input id="email" name="email" type="email" autocomplete="email" maxlength="254" placeholder="you@example.com" required>
           </div>
           <div class="form-field form-field-full">
             <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="How can I help?" required></textarea>
+            <textarea id="message" name="message" maxlength="5000" placeholder="How can I help?" required></textarea>
           </div>
         </div>
         <button class="button button-primary form-submit" type="submit">Continue to email</button>
@@ -654,21 +501,23 @@
   </main>
 
   <footer class="site-footer">
-    <p>© 2026 Rahul Singh</p>
+    <p>© <span id="year">2026</span> Rahul Singh</p>
     <p>Manchester, United Kingdom · Digital Platform Solutions &amp; Client Services</p>
   </footer>
 
   <a class="floating-whatsapp" href="https://wa.me/447460010944" target="_blank" rel="noopener noreferrer" aria-label="Chat with Rahul Singh on WhatsApp">💬</a>
 
   <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
     document.getElementById("message-form").addEventListener("submit", function (event) {
       event.preventDefault();
       if (!this.reportValidity()) return;
 
       const formData = new FormData(this);
-      const name = formData.get("name").trim();
-      const email = formData.get("email").trim();
-      const message = formData.get("message").trim();
+      const name = String(formData.get("name")).trim();
+      const email = String(formData.get("email")).trim();
+      const message = String(formData.get("message")).trim();
       const subject = `Website enquiry from ${name}`;
       const body = `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;
       window.location.href = `mailto:iamrahul06522@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;

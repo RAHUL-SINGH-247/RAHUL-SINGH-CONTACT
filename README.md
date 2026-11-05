@@ -1,42 +1,68 @@
 # Rahul Singh Contact
 
-A responsive, single-page business and contact website for Rahul Singh, based in Manchester, United Kingdom.
+A modern, responsive business contact page for Rahul Singh, showcasing digital platform solutions, client support services, and direct contact options.
 
-## About
+## Overview
 
-The site introduces Rahul Singh's digital platform solutions and client services, highlights the services offered, and provides direct ways to get in touch.
+This repository contains a single-page website designed for a professional business profile in Manchester, United Kingdom. The page presents Rahul Singh's services, contact information, and quick-access actions for WhatsApp, phone calls, and email.
 
 ## Features
 
-- Responsive layout for desktop and mobile screens
-- Business profile and service highlights
-- Contact details and location
-- Links for WhatsApp, phone, and email
-- Built as a static webpage with no build step or external dependencies
+- Clean, modern design with a dark professional theme
+- Fully responsive layout for mobile and desktop devices
+- Business service highlights and trust indicators
+- Direct WhatsApp, call, and email call-to-action buttons
+- Simple static website with no framework or complex setup required
+- Lightweight HTML/CSS implementation
 
-## Tech stack
+## Website Highlights
 
-- HTML5
-- CSS3 (embedded in `index.html`)
+- Professional branding and identity
+- Service categories including digital solutions and client support
+- Contact cards for key business details
+- Floating WhatsApp button for quick access on mobile and desktop
+- Clear business positioning for client outreach
 
-## Run locally
+## Project Structure
 
-Open `index.html` in a browser, or serve the project locally with Python:
+```text
+.
+├── index.html
+├── README.md
+└── .gitignore
+```
+
+## Run Locally
+
+Because this is a static website, you can view it by opening `index.html` directly in a browser.
+
+Alternatively, run a local web server:
 
 ```bash
 python -m http.server 8000
 ```
 
-Then visit <http://localhost:8000>.
+Then open the local site in your browser:
 
-## Contact
+```text
+http://localhost:8000
+```
 
-- WhatsApp: [+44 7460 010944](https://wa.me/447460010944)
-- Phone: [+44 7516 113461](tel:+447516113461)
-- Email: [iamrahul06522@gmail.com](mailto:iamrahul06522@gmail.com)
+## Contact Information
+
+- WhatsApp: +44 7460 010944
+- Direct Contact: +44 7516 113461
+- Email: iamrahul06522@gmail.com
 - Location: Manchester, United Kingdom
 
-## Repository contents
+## About Rahul Singh
 
-- `index.html` — the website's markup and styles
-- `README.md` — project documentation
+Rahul Singh provides professional digital platform solutions, business support, client services, and technology consulting with a focus on reliable, client-centered service.
+
+## Notes
+
+This project is designed as a personal business profile and contact landing page for professional outreach and digital presence.
+
+---
+
+© 2026 Rahul Singh

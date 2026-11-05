@@ -1,27 +1,41 @@
-# Rahul Singh Contact
+# Rahul Singh | Digital Platform Solutions
 
-A modern, responsive business contact page for Rahul Singh, showcasing digital platform solutions, client support services, and direct contact options.
+A professional one-page business profile and contact website for Rahul Singh, designed to present digital platform solutions, business support services, and direct client contact options.
 
 ## Overview
 
-This repository contains a single-page website designed for a professional business profile in Manchester, United Kingdom. The page presents Rahul Singh's services, contact information, and quick-access actions for WhatsApp, phone calls, and email.
+This repository hosts a responsive static website built for a professional digital services brand based in Manchester, United Kingdom. The site is intended to create a strong first impression, highlight key services, and make it easy for clients to contact Rahul via WhatsApp, phone, or email.
+
+## Purpose
+
+The website serves as a digital business card and client engagement page, helping people quickly understand:
+
+- who Rahul Singh is
+- what services are offered
+- where the business is located
+- how to get in touch
 
 ## Features
 
-- Clean, modern design with a dark professional theme
-- Fully responsive layout for mobile and desktop devices
-- Business service highlights and trust indicators
-- Direct WhatsApp, call, and email call-to-action buttons
-- Simple static website with no framework or complex setup required
-- Lightweight HTML/CSS implementation
+- Modern dark-themed, high-contrast design
+- Responsive layout optimized for desktop and mobile users
+- Business branding and identity presentation
+- Contact cards for phone, WhatsApp, email, and location
+- Clear service highlight section
+- Floating WhatsApp call-to-action button
+- Lightweight static implementation with no dependency installation
 
-## Website Highlights
+## Services Highlighted
 
-- Professional branding and identity
-- Service categories including digital solutions and client support
-- Contact cards for key business details
-- Floating WhatsApp button for quick access on mobile and desktop
-- Clear business positioning for client outreach
+- B2B Digital Solutions
+- B2C Platform Services
+- White Label Solutions
+- Administrative Dashboard Systems
+- Client Onboarding Assistance
+- Platform Management Support
+- Business Development Support
+- Technical Consultation
+- 24/7 Customer Assistance
 
 ## Project Structure
 
@@ -34,15 +48,15 @@ This repository contains a single-page website designed for a professional busin
 
 ## Run Locally
 
-Because this is a static website, you can view it by opening `index.html` directly in a browser.
+This is a static HTML/CSS website, so you can view it by opening the `index.html` file directly in a browser.
 
-Alternatively, run a local web server:
+If you prefer to serve it locally:
 
 ```bash
 python -m http.server 8000
 ```
 
-Then open the local site in your browser:
+Then visit:
 
 ```text
 http://localhost:8000
@@ -57,12 +71,14 @@ http://localhost:8000
 
 ## About Rahul Singh
 
-Rahul Singh provides professional digital platform solutions, business support, client services, and technology consulting with a focus on reliable, client-centered service.
+Rahul Singh provides professional digital platform solutions, client support, business assistance, and technology consulting with a focus on responsive service and practical business outcomes.
 
 ## Notes
 
-This project is designed as a personal business profile and contact landing page for professional outreach and digital presence.
+This project is intended as a personal business profile and client-facing landing page for professional communication and digital visibility.
 
 ---
 
 © 2026 Rahul Singh
+Manchester, United Kingdom
+Professional Digital Platform Solutions & Client Services

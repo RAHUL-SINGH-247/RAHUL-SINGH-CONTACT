@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">White-label sports platform preview</title>
+  <desc id="desc">Illustrated dark sports platform storefront with event cards and a gold accent theme.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#111722"/><stop offset="1" stop-color="#090d13"/></linearGradient>
+    <linearGradient id="gold" x2="1"><stop stop-color="#f0d9a5"/><stop offset="1" stop-color="#c6a45e"/></linearGradient>
+    <linearGradient id="pitch" x2="0" y2="1"><stop stop-color="#205746"/><stop offset="1" stop-color="#102c25"/></linearGradient>
+  </defs>
+  <rect width="1200" height="700" fill="url(#bg)"/>
+  <rect x="34" y="32" width="1132" height="636" rx="24" fill="#0c1118" stroke="#d7bd85" stroke-opacity=".35"/>
+  <rect x="34" y="32" width="1132" height="74" rx="24" fill="#141b25"/>
+  <path d="M34 82h1132v24H34z" fill="#141b25"/>
+  <circle cx="76" cy="69" r="17" fill="url(#gold)"/><path d="M69 69h14M76 62v14" stroke="#17202a" stroke-width="3" stroke-linecap="round"/>
+  <text x="108" y="77" fill="#f5f1e8" font-family="Arial,sans-serif" font-size="24" font-weight="700" letter-spacing="2">NORTHSTAR</text>
+  <text x="700" y="75" fill="#b7b2a7" font-family="Arial,sans-serif" font-size="16">SPORTS</text><text x="790" y="75" fill="#b7b2a7" font-family="Arial,sans-serif" font-size="16">LIVE</text>
+  <rect x="957" y="49" width="88" height="38" rx="8" fill="#222c38"/><text x="977" y="74" fill="#f5f1e8" font-family="Arial,sans-serif" font-size="14">LOG IN</text>
+  <rect x="1055" y="49" width="91" height="38" rx="8" fill="url(#gold)"/><text x="1070" y="74" fill="#151922" font-family="Arial,sans-serif" font-size="14" font-weight="700">JOIN NOW</text>
+  <text x="76" y="158" fill="#f0d9a5" font-family="Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="3">YOUR BRAND. YOUR PLATFORM.</text>
+  <text x="76" y="207" fill="#f5f1e8" font-family="Georgia,serif" font-size="37">A tailored sports experience</text>
+  <rect x="76" y="232" width="1048" height="212" rx="16" fill="url(#pitch)" stroke="#54766b" stroke-opacity=".5"/>
+  <path d="M600 232v212M76 338h1048M565 232a35 35 0 0 0 70 0M565 444a35 35 0 0 1 70 0" fill="none" stroke="#dce7dc" stroke-opacity=".28" stroke-width="2"/>
+  <rect x="92" y="256" width="96" height="30" rx="15" fill="#c8403d"/><text x="115" y="277" fill="white" font-family="Arial,sans-serif" font-size="13" font-weight="700">● LIVE</text>
+  <text x="337" y="310" fill="#f5f1e8" font-family="Arial,sans-serif" font-size="19">MANCHESTER</text><text x="742" y="310" fill="#f5f1e8" font-family="Arial,sans-serif" font-size="19">LONDON</text>
+  <text x="544" y="361" fill="#ffffff" font-family="Arial,sans-serif" font-size="38" font-weight="700">2 : 1</text>
+  <text x="496" y="415" fill="#c7d2ca" font-family="Arial,sans-serif" font-size="13">MATCH CENTRE  ·  78′</text>
+  <text x="76" y="493" fill="#f5f1e8" font-family="Arial,sans-serif" font-size="20" font-weight="700">FEATURED EVENTS</text>
+  <g font-family="Arial,sans-serif">
+    <rect x="76" y="514" width="330" height="112" rx="12" fill="#171f2a" stroke="#ffffff" stroke-opacity=".08"/><text x="98" y="548" fill="#b7b2a7" font-size="13">PREMIER LEAGUE</text><text x="98" y="581" fill="#f5f1e8" font-size="16">City FC  vs  United FC</text><rect x="98" y="594" width="84" height="22" rx="5" fill="#273240"/><text x="119" y="610" fill="#f0d9a5" font-size="12">VIEW EVENT</text>
+    <rect x="435" y="514" width="330" height="112" rx="12" fill="#171f2a" stroke="#ffffff" stroke-opacity=".08"/><text x="457" y="548" fill="#b7b2a7" font-size="13">CHAMPIONSHIP</text><text x="457" y="581" fill="#f5f1e8" font-size="16">Rovers FC  vs  Athletic</text><rect x="457" y="594" width="84" height="22" rx="5" fill="#273240"/><text x="478" y="610" fill="#f0d9a5" font-size="12">VIEW EVENT</text>
+    <rect x="794" y="514" width="330" height="112" rx="12" fill="#171f2a" stroke="#ffffff" stroke-opacity=".08"/><text x="816" y="548" fill="#b7b2a7" font-size="13">EUROPEAN CUP</text><text x="816" y="581" fill="#f5f1e8" font-size="16">Royal FC  vs  Sporting</text><rect x="816" y="594" width="84" height="22" rx="5" fill="#273240"/><text x="837" y="610" fill="#f0d9a5" font-size="12">VIEW EVENT</text>
+  </g>
+</svg>

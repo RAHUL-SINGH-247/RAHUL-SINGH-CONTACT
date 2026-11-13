@@ -1,10 +1,10 @@
 # Rahul Singh | Digital Platform Solutions
 
-A professional one-page business profile and contact website for Rahul Singh, designed to present digital platform solutions, business support services, and direct client contact options.
+A one-page business profile and contact website for Rahul Singh, presenting areas for discussion around digital platform concepts, business workflows, and technical requirements.
 
 ## Overview
 
-This repository hosts a responsive static website built for a professional digital services brand based in Manchester, United Kingdom. The site is intended to create a strong first impression, highlight key services, and make it easy for clients to contact Rahul via WhatsApp, phone, or email.
+This repository hosts a responsive static website for Rahul Singh, based in Manchester, United Kingdom. It introduces areas of support and provides direct email, WhatsApp, and phone links.
 
 ## Purpose
 
@@ -20,28 +20,24 @@ The website serves as a digital business card and client engagement page, helpin
 - Modern dark-themed, high-contrast design
 - Responsive layout optimized for desktop and mobile users
 - Business branding and identity presentation
-- Contact cards for phone, WhatsApp, email, and location
-- Clear service highlight section
+- Direct contact links for email, WhatsApp, and phone
+- Clear project-discussion areas, including a note on regulated betting and gaming
 - Floating WhatsApp call-to-action button
 - Lightweight static implementation with no dependency installation
 
 ## Services Highlighted
 
-- B2B Digital Solutions
-- B2C Platform Services
-- White Label Solutions
-- Administrative Dashboard Systems
-- Client Onboarding Assistance
-- Platform Management Support
-- Business Development Support
-- Technical Consultation
-- 24/7 Customer Assistance
+- Digital platform concepts and requirements planning
+- Admin and operations workflow discussions
+- Business and technical guidance
+- Betting and gaming concepts only where lawful and handled by appropriately licensed operators
 
 ## Project Structure
 
 ```text
 .
 ├── index.html
+├── styles.css
 ├── README.md
 └── .gitignore
 ```
@@ -71,11 +67,11 @@ http://localhost:8000
 
 ## About Rahul Singh
 
-Rahul Singh provides professional digital platform solutions, client support, business assistance, and technology consulting with a focus on responsive service and practical business outcomes.
+Rahul Singh is based in Manchester, United Kingdom. Contact him to discuss digital platform concepts, business workflows, or technical requirements.
 
 ## Notes
 
-This project is intended as a personal business profile and client-facing landing page for professional communication and digital visibility.
+The contact actions open email, WhatsApp, or the phone dialer; there is no on-page submission form. Betting and gaming are regulated activities, and this page does not offer legal or regulatory advice.
 
 ---
 

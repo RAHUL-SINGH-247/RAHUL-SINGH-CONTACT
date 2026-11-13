@@ -31,8 +31,12 @@ The website serves as a digital business card and client engagement page, helpin
 
 - White-label betting platform concepts and requirements planning
 - Master-panel, admin-dashboard, and operations workflow discussions
+- B2B and B2C platform names, with Master-DL, Super Master-MDL, Sub Admin-SMDL, Admin, and white-label options to enquire about
+- Enquiries about low-sharing and low-investment options
 - Business and technical guidance
 - Betting and gaming concepts only where lawful and handled by appropriately licensed operators
+
+The site lists these platform names: DIAMONDEXCH99, LORDSEXCH, LOTUSBOOK247, TAJ777, TENEXCH, WORLD777, D247, PS247, PS777, PS999, Krishna777, Krishna999, Krishna247, Allpanel247, Allpanel777, Allpanelexch, and Bpexch99 (PKR version). Availability, terms, and suitability should be confirmed directly.
 
 ## Project Structure
 

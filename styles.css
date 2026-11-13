@@ -446,7 +446,25 @@ main { padding-bottom: 2.5rem; }
 }
 
 .topline { padding-block: 0.9rem 1.15rem; }
-.wordmark { font-size: 1.2rem; letter-spacing: 0.09em; }
+.wordmark {
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 0.16rem;
+  font-family: var(--sans);
+  font-size: 0.61rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  line-height: 1;
+}
+.wordmark .brand-service { color: var(--muted); }
+.wordmark .brand-name {
+  color: var(--gold-bright);
+  font-family: var(--serif);
+  font-size: 1.16rem;
+  font-weight: 400;
+  letter-spacing: 0.075em;
+}
 .site-nav { gap: clamp(1rem, 2.4vw, 2rem); }
 .site-nav a { font-size: 0.84rem; }
 .location {
@@ -683,7 +701,8 @@ main { padding-bottom: 2.5rem; }
 }
 @media (max-width: 560px) {
   .topline { gap: 0.5rem; }
-  .wordmark { font-size: clamp(0.84rem, 4vw, 1.05rem); letter-spacing: 0.045em; }
+  .wordmark { font-size: 0.56rem; }
+  .wordmark .brand-name { font-size: clamp(0.95rem, 4vw, 1.08rem); }
   .location { padding: 0.42rem 0.55rem; font-size: 0.62rem; }
   .site-nav { justify-content: flex-start; gap: 1.2rem; }
   .hero { grid-template-columns: 1fr; gap: 1.75rem; padding: 2.75rem 1.35rem 1.5rem; }

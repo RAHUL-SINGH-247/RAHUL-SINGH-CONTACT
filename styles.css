@@ -683,6 +683,7 @@ main { padding-bottom: 2.5rem; }
 }
 @media (max-width: 560px) {
   .topline { gap: 0.5rem; }
+  .wordmark { font-size: clamp(0.84rem, 4vw, 1.05rem); letter-spacing: 0.045em; }
   .location { padding: 0.42rem 0.55rem; font-size: 0.62rem; }
   .site-nav { justify-content: flex-start; gap: 1.2rem; }
   .hero { grid-template-columns: 1fr; gap: 1.75rem; padding: 2.75rem 1.35rem 1.5rem; }

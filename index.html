@@ -111,15 +111,29 @@
       <section class="platform-offer" aria-labelledby="platform-offer-title">
         <div class="offer-heading">
           <div>
-            <p class="eyebrow">Platform portfolio</p>
-            <h3 id="platform-offer-title">B2B &amp; B2C site options</h3>
+            <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span>Platform portfolio</p>
+            <h3 id="platform-offer-title">Find your platform.</h3>
           </div>
-          <p>Ask about the platform brands and setup options relevant to your market and requirements.</p>
+          <div class="portfolio-summary" aria-label="Portfolio summary">
+            <span><strong>17</strong> platform names</span>
+            <span class="summary-divider" aria-hidden="true"></span>
+            <span><strong>05</strong> setup options</span>
+          </div>
         </div>
         <div class="offer-layout">
           <div class="brand-list-wrap">
-            <h4>Official site names</h4>
-            <ul class="brand-list" aria-label="Platform site names">
+            <div class="brand-list-heading">
+              <div>
+                <h4>Official site names</h4>
+                <p>Explore the available brand options</p>
+              </div>
+              <label class="brand-search">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.3"/><path d="m15.5 15.5 4.2 4.2"/></svg>
+                <span class="visually-hidden">Search platform names</span>
+                <input id="brand-search" type="search" placeholder="Find a name" autocomplete="off" aria-controls="brand-list" aria-describedby="brand-results">
+              </label>
+            </div>
+            <ul class="brand-list" id="brand-list" aria-label="Platform site names">
               <li>DIAMONDEXCH99</li>
               <li>LORDSEXCH</li>
               <li>LOTUSBOOK247</li>
@@ -138,18 +152,21 @@
               <li>Allpanelexch</li>
               <li>Bpexch99 <span>(PKR version)</span></li>
             </ul>
+            <p class="brand-results" id="brand-results" aria-live="polite">Showing all 17 platform names.</p>
+            <p class="brand-empty" id="brand-empty" hidden>No platform names match your search.</p>
           </div>
           <aside class="offer-details" aria-label="Available panel roles and enquiry">
-            <h4>Setup options to discuss</h4>
+            <p class="offer-kicker">Access &amp; setup</p>
+            <h4>Choose your starting point</h4>
             <ul class="role-list">
-              <li><span>01</span>Master — DL</li>
-              <li><span>02</span>Super Master — MDL</li>
-              <li><span>03</span>Sub Admin — SMDL</li>
-              <li><span>04</span>Admin</li>
-              <li><span>05</span>White-label</li>
+              <li><span>01</span><strong>Master</strong><span class="role-code">DL</span></li>
+              <li><span>02</span><strong>Super Master</strong><span class="role-code">MDL</span></li>
+              <li><span>03</span><strong>Sub Admin</strong><span class="role-code">SMDL</span></li>
+              <li><span>04</span><strong>Admin</strong><span class="role-code">PANEL</span></li>
+              <li><span>05</span><strong>White-label</strong><span class="role-code">BRAND</span></li>
             </ul>
-            <p class="offer-pricing">Ask about low-sharing and low-investment options for your requirements.</p>
-            <a class="button button-primary offer-button" href="https://wa.me/447460010944?text=Hi%2C%20I%27d%20like%20to%20enquire%20about%20B2B%20%2F%20B2C%20platform%20and%20panel%20options." target="_blank" rel="noopener noreferrer">DM for enquiry <span aria-hidden="true">↗</span></a>
+            <div class="offer-note"><span class="offer-note-icon" aria-hidden="true">↘</span><p>Ask about low-sharing and low-investment options for your requirements.</p></div>
+            <a class="button button-primary offer-button" href="https://wa.me/447460010944?text=Hi%2C%20I%27d%20like%20to%20enquire%20about%20B2B%20%2F%20B2C%20platform%20and%20panel%20options." target="_blank" rel="noopener noreferrer">Discuss your requirements <span aria-hidden="true">↗</span></a>
           </aside>
         </div>
       </section>
@@ -175,6 +192,27 @@
 
   <footer class="site-footer"><p>© <span id="year">2026</span> Rahul Singh</p><p>Manchester, United Kingdom · Digital Platform Solutions</p></footer>
   <a class="floating-whatsapp" href="https://wa.me/447460010944" target="_blank" rel="noopener noreferrer" aria-label="Chat with Rahul Singh on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11.6a8 8 0 0 1-11.8 7L4 20l1.4-4.1A8 8 0 1 1 20 11.6Z"/><path d="M9 8.5c.3 2 2 3.8 4 4.5l1.4-1.1 2 1c-.2 1.3-1.2 2-2.5 2-3.2-.3-6.5-3.3-6.9-6.4 0-1.3.8-2.2 2-2.4l1 2L9 8.5Z"/></svg></a>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const brandSearch = document.getElementById('brand-search');
+    const brandItems = [...document.querySelectorAll('#brand-list li')];
+    const brandResults = document.getElementById('brand-results');
+    const brandEmpty = document.getElementById('brand-empty');
+
+    brandSearch.addEventListener('input', () => {
+      const query = brandSearch.value.trim().toLocaleLowerCase();
+      const matchCount = brandItems.reduce((count, item) => {
+        const matches = item.textContent.toLocaleLowerCase().includes(query);
+        item.hidden = !matches;
+        return count + Number(matches);
+      }, 0);
+
+      brandResults.textContent = query
+        ? `${matchCount} of ${brandItems.length} platform names shown.`
+        : `Showing all ${brandItems.length} platform names.`;
+      brandEmpty.hidden = matchCount > 0;
+    });
+  </script>
 </body>
 </html>

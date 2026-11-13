@@ -644,28 +644,72 @@ main { padding-bottom: 2.5rem; }
 .form-note span { flex: 0 0 auto; color: var(--gold); }
 
 .platform-offer {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
   margin-top: 1.4rem;
-  padding: clamp(1.25rem, 3vw, 2rem);
-  border: 1px solid var(--border-strong);
-  border-radius: 12px;
+  padding: clamp(1.25rem, 3.2vw, 2.2rem);
+  border: 1px solid rgba(215, 189, 133, 0.3);
+  border-radius: 14px;
   background:
-    radial-gradient(ellipse at 100% 0, rgba(215, 189, 133, 0.08), transparent 40%),
-    #121318;
+    radial-gradient(ellipse at 90% 4%, rgba(215, 189, 133, 0.12), transparent 35%),
+    radial-gradient(ellipse at 0% 100%, rgba(109, 124, 160, 0.08), transparent 38%),
+    linear-gradient(140deg, #15161b, #101116 72%);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.035), 0 20px 50px rgba(0, 0, 0, 0.16);
 }
-.offer-heading { display: flex; align-items: end; justify-content: space-between; gap: 1.5rem; margin-bottom: 1.3rem; }
-.offer-heading h3 { margin: 0.35rem 0 0; color: var(--text); font-family: var(--serif); font-size: clamp(1.45rem, 3vw, 2rem); font-weight: 400; }
-.offer-heading > p { max-width: 390px; margin: 0 0 0.1rem; color: var(--muted); font-size: 0.82rem; }
-.offer-layout { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(240px, 0.65fr); gap: 1.25rem; }
-.brand-list-wrap, .offer-details { padding: 1.1rem; border: 1px solid rgba(215, 189, 133, 0.16); border-radius: 9px; background: rgba(255, 255, 255, 0.018); }
-.brand-list-wrap h4, .offer-details h4 { margin: 0 0 0.85rem; color: var(--gold-bright); font-size: 0.7rem; font-weight: 700; letter-spacing: 0.13em; text-transform: uppercase; }
-.brand-list { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0; padding: 0; list-style: none; }
-.brand-list li { padding: 0.42rem 0.65rem; border: 1px solid var(--border); border-radius: 5px; color: var(--text); background: rgba(215, 189, 133, 0.035); font-size: 0.72rem; font-weight: 600; letter-spacing: 0.025em; overflow-wrap: anywhere; }
+.platform-offer::before {
+  position: absolute;
+  z-index: -1;
+  top: -105px;
+  right: -85px;
+  width: 260px;
+  aspect-ratio: 1;
+  border: 1px solid rgba(215, 189, 133, 0.13);
+  border-radius: 50%;
+  box-shadow: 0 0 0 18px rgba(215, 189, 133, 0.025), 0 0 0 38px rgba(215, 189, 133, 0.018);
+  content: "";
+  pointer-events: none;
+}
+.offer-heading { display: flex; align-items: end; justify-content: space-between; gap: 1.5rem; margin-bottom: 1.45rem; }
+.offer-heading .eyebrow { display: flex; align-items: center; gap: 0.55rem; }
+.offer-heading h3 { margin: 0.45rem 0 0; color: var(--text); font-family: var(--serif); font-size: clamp(1.8rem, 3.3vw, 2.5rem); font-weight: 400; letter-spacing: -0.025em; }
+.portfolio-summary { display: flex; align-items: center; gap: 0.75rem; padding: 0.65rem 0.8rem; border: 1px solid var(--border); border-radius: 8px; background: rgba(11, 12, 16, 0.35); }
+.portfolio-summary > span:not(.summary-divider) { display: grid; gap: 0.1rem; color: var(--muted); font-size: 0.58rem; letter-spacing: 0.07em; text-transform: uppercase; }
+.portfolio-summary strong { color: var(--gold-bright); font-family: var(--serif); font-size: 1.25rem; font-weight: 400; letter-spacing: 0; line-height: 1; }
+.summary-divider { width: 1px; height: 28px; background: var(--border); }
+.offer-layout { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(255px, 0.6fr); gap: 0.9rem; align-items: stretch; }
+.brand-list-wrap, .offer-details { min-width: 0; padding: clamp(0.9rem, 2vw, 1.25rem); border: 1px solid rgba(215, 189, 133, 0.16); border-radius: 10px; background: rgba(10, 11, 15, 0.52); }
+.brand-list-heading { display: flex; align-items: center; justify-content: space-between; gap: 0.8rem; margin-bottom: 1rem; }
+.brand-list-wrap h4, .offer-details h4 { margin: 0; color: var(--gold-bright); font-size: 0.68rem; font-weight: 700; letter-spacing: 0.13em; text-transform: uppercase; }
+.brand-list-heading p { margin: 0.3rem 0 0; color: var(--muted); font-size: 0.72rem; }
+.brand-search { display: flex; width: min(185px, 48%); min-height: 38px; align-items: center; gap: 0.45rem; padding: 0 0.65rem; border: 1px solid rgba(215, 189, 133, 0.2); border-radius: 6px; color: var(--muted); background: rgba(255, 255, 255, 0.025); transition: border-color 180ms ease, background-color 180ms ease; }
+.brand-search:focus-within { border-color: var(--gold); background: rgba(215, 189, 133, 0.055); }
+.brand-search svg { width: 15px; height: 15px; flex: 0 0 auto; fill: none; stroke: currentColor; stroke-linecap: round; stroke-width: 1.7; }
+.brand-search input { width: 100%; min-width: 0; padding: 0; border: 0; outline: 0; color: var(--text); background: transparent; font: inherit; font-size: 0.7rem; }
+.brand-search input::placeholder { color: #a7a092; }
+.brand-search input:focus-visible { outline: 0; }
+.brand-search:focus-within { outline: 2px solid var(--gold-bright); outline-offset: 3px; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; clip-path: inset(50%); }
+.brand-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 145px), 1fr)); gap: 0.45rem; margin: 0; padding: 0; list-style: none; }
+.brand-list li { position: relative; display: flex; min-height: 42px; align-items: center; gap: 0.5rem; padding: 0.55rem 0.6rem; border: 1px solid rgba(215, 189, 133, 0.14); border-radius: 6px; color: var(--text); background: linear-gradient(125deg, rgba(215, 189, 133, 0.045), rgba(255, 255, 255, 0.012)); font-size: 0.68rem; font-weight: 600; letter-spacing: 0.02em; overflow-wrap: anywhere; transition: transform 160ms ease, border-color 160ms ease, background-color 160ms ease; }
+.brand-list li::before { width: 6px; height: 6px; flex: 0 0 auto; border-radius: 2px; background: var(--gold); box-shadow: 0 0 9px rgba(240, 217, 165, 0.35); content: ""; transform: rotate(45deg); }
+.brand-list li:hover { transform: translateY(-2px); border-color: var(--border-strong); background-color: rgba(215, 189, 133, 0.08); }
+.brand-list li[hidden] { display: none; }
 .brand-list li span { color: var(--muted); font-size: 0.65rem; font-weight: 400; }
-.role-list { display: grid; gap: 0.45rem; margin: 0; padding: 0; list-style: none; }
-.role-list li { display: flex; align-items: center; gap: 0.7rem; padding: 0.5rem 0.6rem; border-radius: 5px; color: var(--text); background: rgba(255, 255, 255, 0.025); font-size: 0.78rem; }
-.role-list li span { color: var(--gold); font-size: 0.62rem; font-weight: 700; letter-spacing: 0.08em; }
-.offer-pricing { margin: 1rem 0 0; color: var(--muted); font-size: 0.78rem; line-height: 1.6; }
-.offer-button { width: 100%; margin-top: 0.85rem; }
+.brand-results, .brand-empty { min-height: 1em; margin: 0.7rem 0 0; color: var(--muted); font-size: 0.66rem; }
+.brand-empty { color: var(--gold-bright); }
+.offer-details { position: relative; overflow: hidden; background: radial-gradient(ellipse at 100% 0, rgba(215, 189, 133, 0.1), transparent 55%), rgba(10, 11, 15, 0.7); }
+.offer-kicker { margin: 0 0 0.35rem; color: var(--gold); font-size: 0.58rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; }
+.offer-details h4 { margin-bottom: 0.9rem; color: var(--text); font-family: var(--serif); font-size: 1.15rem; font-weight: 400; letter-spacing: 0; text-transform: none; }
+.role-list { display: grid; gap: 0.42rem; margin: 0; padding: 0; list-style: none; }
+.role-list li { display: flex; min-height: 38px; align-items: center; gap: 0.55rem; padding: 0.45rem 0.55rem; border: 1px solid rgba(215, 189, 133, 0.1); border-radius: 5px; color: var(--text); background: rgba(255, 255, 255, 0.025); font-size: 0.72rem; }
+.role-list li > span:first-child { color: var(--gold); font-size: 0.58rem; font-weight: 700; letter-spacing: 0.08em; }
+.role-list li strong { font-weight: 500; }
+.role-list .role-code { margin-left: auto; color: var(--muted); font-size: 0.57rem; letter-spacing: 0.08em; }
+.offer-note { display: flex; align-items: flex-start; gap: 0.6rem; margin-top: 0.8rem; padding: 0.65rem; border: 1px solid rgba(215, 189, 133, 0.14); border-radius: 6px; background: rgba(215, 189, 133, 0.035); }
+.offer-note-icon { display: grid; width: 22px; height: 22px; flex: 0 0 auto; place-items: center; border-radius: 5px; color: #17140e; background: var(--gold); font-size: 0.8rem; }
+.offer-note p { margin: 0; color: var(--muted); font-size: 0.69rem; line-height: 1.5; }
+.offer-button { width: 100%; min-height: 47px; margin-top: 0.7rem; font-size: 0.72rem; }
 
 .contact-cta {
   position: relative;
@@ -717,7 +761,12 @@ main { padding-bottom: 2.5rem; }
   .about-aside { max-width: none; }
   .reasons-grid { grid-template-columns: 1fr; }
   .reason-card { min-height: 245px; }
-  .offer-layout { grid-template-columns: 1fr; }
+  .offer-layout { grid-template-columns: minmax(0, 1fr); }
+  .offer-details { display: grid; grid-template-columns: minmax(0, 1fr) minmax(180px, 0.8fr); gap: 0 1rem; }
+  .offer-kicker, .offer-details h4, .role-list { grid-column: 1; }
+  .offer-note, .offer-button { grid-column: 2; }
+  .offer-note { grid-row: 1 / span 2; align-self: end; margin-top: 0; }
+  .offer-button { align-self: end; }
   .cta-monogram { right: 3%; opacity: 0.38; }
 }
 @media (max-width: 640px) {
@@ -742,6 +791,11 @@ main { padding-bottom: 2.5rem; }
   .section-heading-row { align-items: flex-start; flex-direction: column; gap: 0.6rem; }
   .section-heading-row > p { max-width: 100%; }
   .offer-heading { align-items: flex-start; flex-direction: column; gap: 0.5rem; }
+  .portfolio-summary { align-self: stretch; justify-content: flex-start; }
+  .brand-list-heading { align-items: flex-start; flex-direction: column; }
+  .brand-search { width: 100%; }
+  .offer-details { display: block; }
+  .offer-note { margin-top: 0.8rem; }
   .panel { padding: 2rem 1.25rem; }
   .contact-cta { min-height: 390px; align-items: flex-start; padding: 2.25rem 1.25rem; }
   .cta-content { width: 100%; }
@@ -751,4 +805,5 @@ main { padding-bottom: 2.5rem; }
 @media (prefers-reduced-motion: reduce) {
   .contact-card:hover, .reason-card:hover { transform: none; }
   .button-primary span, .contact-actions .button span { transition: none; }
+  .brand-list li:hover { transform: none; }
 }

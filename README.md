@@ -23,6 +23,7 @@ The website serves as a digital business card and client engagement page, helpin
 - Direct contact links for email, WhatsApp, and phone
 - White-label sportsbook concepts and master/admin panel workflows for discussion
 - A note on regulated betting and gaming
+- Search-engine sitemap, crawler instructions, and social-sharing metadata
 - Floating WhatsApp call-to-action button
 - Lightweight static implementation with no dependency installation
 
@@ -38,6 +39,8 @@ The website serves as a digital business card and client engagement page, helpin
 ```text
 .
 ├── index.html
+├── robots.txt
+├── sitemap.xml
 ├── styles.css
 ├── README.md
 └── .gitignore
